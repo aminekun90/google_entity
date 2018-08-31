@@ -1,0 +1,37 @@
+{
+  "name": "google_entity",
+  "version": "1.0.0",
+  "description": "Google entity uses Google datastore sdk to do crud and search more efficiently than the basic core sdk",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "engines": {
+    "node": ">=6.14.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aminekun90/google_entity.git"
+  },
+  "keywords": [
+    "google",
+    "google-datastore",
+    "entity",
+    "google-cloud",
+    "google-functions"
+  ],
+  "author": "Amine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aminekun90/google_entity/issues"
+  },
+  "homepage": "https://github.com/aminekun90/google_entity#readme",
+  "dependencies": {
+    "@google-cloud/datastore": "^1.4.2",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
