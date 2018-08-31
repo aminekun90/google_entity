@@ -18,5 +18,16 @@ describe('#utils', function () {
             atr1: 'Hi',
             atr2: 'My brother'
         });
-    })
-})
+    });
+    it('should say is empty equals true', () => {
+        expect(utils.isEmpty({})).to.equal(true);
+    });
+    it('should say is empty equals false', () => {
+        expect(utils.isEmpty({
+            atr: 'Not empty'
+        })).to.equal(false);
+    });
+});
+describe('#entity', function () {
+
+});
