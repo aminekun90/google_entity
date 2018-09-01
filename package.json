@@ -1,6 +1,6 @@
 {
   "name": "google_entity",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Google entity uses Google datastore sdk to do crud and search more efficiently than the basic core sdk",
   "main": "index.js",
   "scripts": {

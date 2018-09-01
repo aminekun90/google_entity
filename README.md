@@ -12,17 +12,17 @@ Google entity uses Google datastore sdk to do crud and search more efficiently t
 const entity = require("google-entity");
 ```
 
-| Function                  | Usage | Description |
-| ------------------------- | ----- | ----------- |
-| `addEntities`             |       |             |
-| `addEntity`               |       |             |
-| `deleteEntitiesFromKeys`  |       |             |
-| `deleteEntity`            |       |             |
-| `getEntities`             |       |             |
-| `getEntitiesByAttributes` |       |             |
-| `getEntitiesFromKeys`     |       |             |
-| `getEntity`               |       |             |
-| `updateEntity`            |       |             |
+| Function                  | Description                                   |
+| ------------------------- | --------------------------------------------- |
+| `addEntities`             | Add multiple entities that have the same kind |
+| `addEntity`               | Add an entity                                 |
+| `deleteEntitiesFromKeys`  | Delete entities from keys                     |
+| `deleteEntity`            | Delete an entity                              |
+| `getEntities`             | Get an entity by id                           |
+| `getEntitiesByAttributes` | Get entities of the same kind with attributes |
+| `getEntitiesFromKeys`     | Get different entities from keys              |
+| `getEntity`               | Get an entity by id                           |
+| `updateEntity`            | Update an entity                              |
 
 ## Tests
 

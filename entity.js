@@ -246,7 +246,7 @@ exports.deleteEntity = (obj) => {
         }).catch((err) => {
             reject({
                 success: false,
-                message: 'Entity not found',
+                message: 'Entity cannot be deleted !',
                 error: err
             });
         });
@@ -274,10 +274,8 @@ exports.getEntitiesFromKeys = (objs) => {
             entitieskeys.push(datastore.key([obj.kind, id]));
         }
     });
-    // console.log('Entities keys ----->', entitieskeys);
     return new Promise((resolve, reject) => {
         datastore.get(entitieskeys).then((results) => {
-            // console.log('Results-------->', results[0]);
             const entities = results[0];
             entities.forEach((entity) => {
                 entity.id = entity[datastore.KEY].id ? entity[datastore.KEY].id : entity[datastore.KEY].name;
@@ -327,7 +325,7 @@ exports.deleteEntitiesFromKeys = (objs) => {
 };
 
 /**
- * Add ultiple entities that have the same kind
+ * Add multiple entities that have the same kind
  * @param obj => obj = {data: [], kind: string, token: string} data contains all objects that needed to be pushed
  * @author amine.bouzahar
  * @returns {Promise}
